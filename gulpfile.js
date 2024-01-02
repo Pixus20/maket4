@@ -18,8 +18,8 @@ function scripts() {
 
 function styles() {
     return src([
-        
-        'app/scss/style.scss'
+        'app/scss/prepearing.scss',
+        'app/scss/header.scss'
     ])
         .pipe(concat('style.min.css'))
         .pipe(scss({ outputStyle: 'compressed'}))
@@ -28,7 +28,7 @@ function styles() {
     }
 
 function watching() {
-    watch(['app/scss/style.scss'], styles)
+    watch(['app/scss/*'], styles)
     watch(['app/js/main.js'],scripts)
     watch(['app/*.html']).on('change', browserSync.reload)
 }
@@ -46,7 +46,8 @@ function building(){
         'app/css/style.min.css',
         'app/js/main.min.js',
         'app/**/*.html',
-        'app/images/*'
+        'app/images/*',
+        'app/fonts/*'
     ], {base: 'app'})
     .pipe(dest('dist'))
 }
