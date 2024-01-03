@@ -1,0 +1,18 @@
+main{
+    .content_first_block{
+        background-color: #f7f7f7;
+        display: flex;
+        justify-content: center;
+        .content1_left{
+            width: 550px;
+            font-weight: 300;
+            h1{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                padding-top: 30px;
+            }
+        }
+    }
+}
