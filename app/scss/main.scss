@@ -3,15 +3,89 @@ main{
         background-color: #f7f7f7;
         display: flex;
         justify-content: center;
+        align-items: center;
+        padding: 40px;
         .content1_left{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             width: 550px;
             font-weight: 300;
             h1{
                 text-align: center;
             }
-            p{
+            p{                
                 text-align: center;
+                width: 500px;
                 padding-top: 30px;
+            }
+        }
+        .content1_right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 57px;
+            form{ 
+                p{
+                    margin-top: 10px;
+                }           
+                input{
+                    padding-left: 15px;
+                    height: 45px;
+                    width: 587px;
+                    border-radius: 5px;
+                    border:1px solid #bababa; 
+                }
+                input:active{
+                    border: 1px solid #337ab7;
+                }
+                #Checkbox{
+                    height: 15px;
+                    width: 15px;
+                }
+                .form_checkbox{
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    input{
+                        margin-right: 5px;
+                    }
+                    p{
+                        margin-top: 0;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: #337ab7;
+                        cursor: pointer;
+                    }
+                }
+            }
+            button{
+                margin-top: 20px;
+                color: #f7f7f7;
+                background-color: #337ab7;
+                border:1px solid #337ab7;
+                height: 50px;
+                width: 368px;
+                border-radius: 25px;
+                font-weight: 500;
+                cursor: pointer;
+            }   
+        }
+    }
+}
+@media screen and (max-width:1250px) {
+    main{
+        .content_first_block{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .content1_left{
+                
+            }
+            .content1_right{
+                margin: 0;
             }
         }
     }
