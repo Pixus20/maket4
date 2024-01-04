@@ -19,7 +19,7 @@
                         <li><a href="#">Відгуки про курс</a></li>
                         <li><a href="#">Відео</a></li>
                         <li><a href="#">Ментори</a></li>
-                        <li><a href="#">Подати заявку</a></li>
+                        <li><a href="#content_first_block">Подати заявку</a></li>
                     </ul>
                 </nav>
                     <div class="menu_burger">
@@ -31,6 +31,47 @@
         </div>
     </header>
     <main>
+        <div id="content_first_block">
+            <div class="content1_left">
+                <h1>
+                    Курси програмування у Луцьку
+                </h1>
+                <p>
+                    Сфера ІТ розвивається максимально швидко. Зараз дуже популярно здобувати освіту, що повязана з ІТ. 
+                    Існує лише одна проблема брак дійсно кваліфікованих спеціалістів в Україні. 
+                    Під час навчання в університеті ми отримуємо мало практики і "живих", реальних кейсів. 
+                    ІТ школа ОХІТ створила таку методику навчання, при якій за короткий час ви отримаєте необхідні знання, 
+                    щоб стати ІТ спеціалістом. Чекаємо вас на нших курсах з програмування в Луцьку. Старт наступного курсу 3 серпня
+                </p>
+            </div>
+            <div class="content1_right">
+                <form action="/submit_form" id="registration_form" method="post">
+                    <h2>Зареєструватися на курси</h2>
+                    <p>Ім'я <q id="form_title1" title="Українські та англійські літери (20 символів)">*</q></p>
+                    <input id="form_name" type="text" placeholder="Ім'я" required>
+                    <p>Прівище <q id="form_title2" title="Українські та англійські літери (30 символів)">*</q></p>
+                    <input id="form_surname" type="text" placeholder="Прізвище" required>
+                    <p>Мене більше цікавить <q id="form_title3" title="Виберіть один пункт">*</q></p>
+                    <select id="form_interes" required>
+                        <option value="" selected disabled></option>
+                        <option value="developer">Developer</option>
+                        <option value="QA">QA</option>
+                    </select>
+                    <p>Номер телефону <q id="form_title4" title="Використовуйте номери українських операторів">*</q></p>
+                    <input id="form_number" type="tel" placeholder="Номер телефону: +38 ХХХ ХХ ХХ ХХХ" required>
+                    <p>Email <q id="form_title5" title="Англійські літери, цифри знаки @; .; -;_; (обмеження 50 символів. 1 символ літера чи цифра)">*</q></p>
+                    <input id="form_email" type="email" placeholder="Email" required> 
+                    <div class="form_checkbox">                 
+                    <input type="checkbox" id="Checkbox" name="termsAgree" required>
+                    <p>Я погоджуюсь із <a href="#">Політикою Конфіденційності</a> <q id="form_title6" title="Уважно ознайомтесь із Політикою Конфіденційності">*</q></p>
+                    </div>  
+                    <button class="form_button" type="submit">
+                        ЗАРЕЄСТРУВАТИСЯ ЗАРАЗ
+                    </button>   
+                </form>            
+            </div>
+        </div>
+
     </main>
     <footer>
 

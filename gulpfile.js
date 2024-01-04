@@ -19,7 +19,8 @@ function scripts() {
 function styles() {
     return src([
         'app/scss/prepearing.scss',
-        'app/scss/header.scss'
+        'app/scss/header.scss',
+        'app/scss/main.scss'
     ])
         .pipe(concat('style.min.css'))
         .pipe(scss({ outputStyle: 'compressed'}))

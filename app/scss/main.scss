@@ -1,0 +1,113 @@
+main{
+    #content_first_block{
+        background-color: #f7f7f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        .content1_left{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 550px;
+            font-weight: 300;
+            h1{
+                text-align: center;
+            }
+            p{                
+                text-align: center;
+                width: 500px;
+                padding-top: 30px;
+            }
+        }
+        .content1_right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 57px;
+            form{ 
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                p{
+                    margin-top: 10px;
+                    #form_title1{
+                        quotes: none;
+                        color: red;
+                        cursor: pointer;
+                    }
+                    q{
+                        quotes: none;
+                        color: red;
+                        cursor: pointer;
+                    }
+                }           
+                input{
+                    padding-left: 15px;
+                    height: 45px;
+                    width: 587px;
+                    border-radius: 5px;
+                    border:1px solid #bababa; 
+                }
+                input:focus{
+                    border: 1px solid #337ab7;
+                    box-shadow: inset 0 0 5px #337ab7 ;
+                }
+                select{
+                    padding-left: 15px;
+                    height: 45px;
+                    width: 604px;
+                    border-radius: 5px;
+                    background-color: #fff;
+                    border:1px solid #bababa;                    
+                }
+                select:focus{
+                    border: 1px solid #337ab7;
+                    box-shadow: inset 0 0 5px #337ab7 ;
+                }
+                #Checkbox{
+                    height: 15px;
+                    width: 15px;
+                }
+                .form_checkbox{
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    input{
+                        margin-right: 5px;
+                    }
+                    p{
+                        margin-top: 0;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: #337ab7;
+                        cursor: pointer;
+                    }
+                }
+                button{
+                    align-self: center;
+                    margin-top: 20px;
+                    color: #f7f7f7;
+                    background-color: #337ab7;
+                    border:1px solid #337ab7;
+                    height: 50px;
+                    width: 368px;
+                    border-radius: 25px;
+                    font-weight: 500;
+                    cursor: pointer;
+                }            
+            }   
+        }
+    }
+}
+@media screen and (max-width:1250px) {
+    main{
+        #content_first_block{
+            display: flex;
+            flex-direction: column;
+            align-items: center;        
+        }
+    }
+}

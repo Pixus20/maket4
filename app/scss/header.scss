@@ -26,17 +26,18 @@ header{
             a{
                 text-decoration: none;
                 margin: 0 20px;
-                color: #6f82a4;
+                color: #000; 
                 cursor: pointer;
             }
-            a:hover{
+            a:active{
                 border-radius: 30px;    
-                color: #4988bd;
-                background-color: #eeeeee;
+                border:none;
+                color: #fcfcfc;
+                background-color: #4988bd;
                 padding: 10px;
                 transition: .4s;
-            }
-        
+            }      
+         
             .menu_burger{
                 display: none;
                 position: relative;
@@ -150,7 +151,7 @@ body{
                     a{
                         color: #000;                        
                     }
-                    a:hover{
+                    a:active{
                         border:none;
                         color: #fcfcfc;
                         background-color: #4988bd;
@@ -161,17 +162,6 @@ body{
            
         }
     }
-}
-@media screen and (max-width:768px) {
-    header{
-        
-        };
-}
-
-@media screen and (max-width:425px) {
-    header{
-        
-    };
 }
 @media screen and (max-width:320px) {
     header{
