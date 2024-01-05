@@ -83,26 +83,29 @@ selectElement.addEventListener("change", function () {
     formTitle3.style.color =
         selectedOption === "developer" || selectedOption === "QA" ? "black" : "";
 });
-
-// number input
+//number
 numberInput.addEventListener("input", function (e) {
     var sanitizedValue = e.target.value.replace(/[^0-9+]/g, "");
     sanitizedValue = sanitizedValue.slice(0, 13);
     e.target.value = sanitizedValue;
-    formTitle4.style.color = sanitizedValue.length === 13 ? "black" : "";
+    if (sanitizedValue.length === 13) {
+        formTitle4.style.color = "black";
+    } else {
+        formTitle4.style.color = "red";
+    }
 });
 
 numberInput.addEventListener("focus", function (e) {
     if (!e.target.value.startsWith("+38")) {
         e.target.value = "+38" + e.target.value;
+        formTitle4.style.color = "black";
     }
 });
 
 numberInput.addEventListener("blur", function (e) {
     var inputValue = e.target.value;
-    if (inputValue.length < 13) {
-        e.target.value = "+38" + "".repeat(13 - inputValue.length);
-        formTitle4.style.color = "black";
+    if (inputValue.length !== 13) {
+        formTitle4.style.color = "red";
     }
 });
 
