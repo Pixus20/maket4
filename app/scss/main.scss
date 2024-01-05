@@ -111,3 +111,45 @@ main{
         }
     }
 }
+@media screen and (max-width:768px ) {
+    main{
+        #content_first_block{
+            .content1_left{
+                width: 400px;
+                margin-bottom: 20px;
+                h1{
+                    font-size: 22px;
+                }
+                p{
+                    width: 400px;
+                    font-size: 14px;
+                }
+            }
+        
+            .content1_right{
+                margin: 0;
+                form{ 
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2{
+                    font-size: 22px;
+                }
+                p{
+                    text-align: center;
+                    width: 400px;
+                    font-size: 14px;
+                }
+                select{
+                    width: 417px;
+                    height: 45px;
+                }
+                input{
+                    width: 400px;
+                }
+                }
+            }
+        }
+    }
+}
