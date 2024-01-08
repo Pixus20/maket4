@@ -133,3 +133,32 @@ emailInput.addEventListener("input", function (e) {
 checkboxInput.addEventListener("click", function () {
     formTitle6.style.color = checkboxInput.checked ? "black" : "";
 });
+//slider second block
+$('.content_development').slick({
+    dots: false,
+    infinite: true,
+    arrows:true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [    
+      {
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          arrows:false,
+        }
+      }     
+    ]
+  });

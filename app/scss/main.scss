@@ -3,6 +3,7 @@
     src: url('app/fonts.');
     
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -33,6 +34,8 @@ header{
     z-index: 10;
     background-color: #fff;
     .header_content{
+        display: flex;
+        justify-content: center;
         width: 1190px;
         padding: 0 15px;
         .main_menu{            
@@ -43,10 +46,12 @@ header{
                 height: 80px;
                 width: 80px;
                 margin: 10px 0;
+
             }
             .menu_list{
                 display: flex;
                 list-style-type: none;
+                margin-left: 360px;
             }
             a{
                 text-decoration: none;
@@ -218,15 +223,23 @@ main{
                 font-weight: 500;
             }
             .content_development{
+                width: 1200px;
+                .slick-prev,
+                .slick-next {
+                    font-size: 0; 
+                    background-color:#3498db;
+                    z-index: 1;  
+                    border-radius: 50%;                               
+                }                
                 display: flex;
                 justify-content: center;  
-                    
+                min-width: 0;
                 .dev{
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     width: 350px;
-                    margin: 20px;
+                    margin: 20px; 
                     h2{
                         font-weight: 300;
                     }
@@ -247,12 +260,18 @@ main{
 @media screen and (max-width:1250px) {
     header{
         .header_content{
+            width: 990px;
             .main_menu{
             justify-content: center;
             padding: 0;
-            width: 1024px;
+            
             img{
                 margin-right: 20px;
+            }
+            .menu_nav{
+                .menu_list{
+                    margin-left: 100px;
+                }
             }
             }
         }
@@ -261,12 +280,37 @@ main{
         #content_first_block{
             display: flex;
             flex-direction: column;
-            align-items: center;   
+            align-items: center; 
+            padding: 0;  
+            .content1_left{
+                margin-top: 40px;
+            }
             .content1_right{
-                margin: 0;
+                margin: 40px 0px;
             }     
         }
+        #content_second_block{
+            .content_second_block_in{
+               
+                .content_development{
+                    width: 950px;
+                    .dev{
+                        width: 270px ;
+                        h2{
+                            font-size: 18px;
+                        }
+                        hr{
+                            width: 268px;
+                        }
+                        p{
+                            width: 270px;
+                        }
+                    }
+                }
+            }
+        }
     }
+
 }
 
 @media screen and (max-width:1024px) {
@@ -279,6 +323,7 @@ main{
             display: flex;
             justify-content: center;
             align-items: start;
+            width: 300px;
             img{
                 margin: 10px 0;
                 
@@ -333,9 +378,42 @@ main{
                         background-color: #4988bd;
                     }
                 }
+            }          
+        }
+    }
+    main{
+        #content_second_block{
+            .content_second_block_in{                
+                .content_development{
+                    width: 780px;
+                    .dev{
+                        margin: 20px 10px;
+                        width: 250px ;
+                        h2{
+                            font-size: 16px;
+                        }
+                        hr{
+                            width: 248px;
+                        }
+                        p{
+                            width: 250px;
+                            font-size: 13px;
+                        }
+                    }
+                }
             }
+        }
+    }
+}
+@media screen and (max-width:850px) {
+    main{
+        #content_second_block{
+            .content_second_block_in{
+                .content_development{
+                    width: 540px;
+                }
 
-           
+            }
         }
     }
 }
@@ -355,7 +433,7 @@ main{
             }
         
             .content1_right{
-                margin: 0;
+                margin-bottom: 30px;
                 form{ 
                 width: 400px;
                 display: flex;
@@ -376,6 +454,33 @@ main{
                 input{
                     width: 400px;
                 }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:600px) {
+    main{
+        #content_second_block{
+            .content_second_block_in{
+                h1{
+                    font-size: 20px;
+                }
+                .content_development{
+                    width: 300px;
+                    .slick-dots {
+                        li{
+                            button::before{
+                                padding: 10px;
+                                font-size: 16px;                                
+                            }
+                        }
+                    }
+                    .dev{
+                        hr{
+                            margin: 10px 20px;
+                        }
+                    }
                 }
             }
         }
@@ -456,3 +561,6 @@ main{
         }
     };
 }
+
+
+
