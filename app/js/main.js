@@ -162,3 +162,13 @@ $('.content_development').slick({
       }     
     ]
   });
+  //slider fourth block
+  $('.content_fourth_slider').slick({
+    dots:true,
+    infinite:true,
+    speed:500,
+    autoplay:true,
+    autoplaySpeed:10000,
+    fade: true,
+    cssEase: 'easy-in-out'
+  });
