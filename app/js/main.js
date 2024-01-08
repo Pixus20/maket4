@@ -165,6 +165,7 @@ $('.content_development').slick({
   //slider fourth block
   $('.content_fourth_slider').slick({
     dots:true,
+    arrows:true,
     infinite:true,
     speed:500,
     autoplay:true,
