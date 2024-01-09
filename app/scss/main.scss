@@ -335,6 +335,40 @@ main {
       }
     }
   }
+  #content_fifth_block {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    background-color: #f7f7f7;
+    .content_fifth_wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 50px 15px;
+      .content_fifth_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+          padding: 20px 0;
+        }
+        p {
+          width: 1000px;
+          text-align: center;
+          padding-bottom: 20px;
+        }
+      }
+      .content_fifth_video {
+        width: 95%;
+        iframe {
+          width: 100%;
+          height: 400px;
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 1250px) {
   header {
@@ -500,6 +534,15 @@ main {
         }
       }
     }
+    #content_fifth_block {
+      .content_fifth_wrapper {
+        .content_fifth_text {
+          p {
+            width: auto;
+          }
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 850px) {
@@ -630,6 +673,15 @@ main {
         }
       }
     }
+    #content_fifth_block {
+      .content_fifth_wrapper {
+        .content_fifth_video {
+          iframe {
+            height: 300px;
+          }
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 440px) {
@@ -700,9 +752,29 @@ main {
         }
       }
     }
+    #content_fifth_block {
+      .content_fifth_wrapper {
+        .content_fifth_video {
+          iframe {
+            height: 250px;
+          }
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 350px) {
+  main {
+    #content_fifth_block {
+      .content_fifth_wrapper {
+        .content_fifth_video {
+          iframe {
+            height: 220px;
+          }
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 320px) {
   header {
@@ -717,6 +789,17 @@ main {
         }
         .menu_burger {
           margin: 35px 10px 0 0;
+        }
+      }
+    }
+  }
+  main {
+    #content_fifth_block {
+      .content_fifth_wrapper {
+        .content_fifth_video {
+          iframe {
+            height: 200px;
+          }
         }
       }
     }
