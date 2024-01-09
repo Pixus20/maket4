@@ -20,10 +20,6 @@ html {
   main {
     flex-grow: 1;
   }
-  footer {
-    background-color: #3498db;
-    height: 100px;
-  }
 }
 header {
   display: flex;
@@ -425,6 +421,25 @@ main {
         width: 100%;
         height: 400px;
       }
+    }
+  }
+}
+footer {
+  .content_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+    q {
+      quotes: none;
+    }
+    a {
+      text-decoration: none;
+      color: #3498db;
+      margin-left: 5px;
+    }
+    p {
+      font-weight: 300;
     }
   }
 }
