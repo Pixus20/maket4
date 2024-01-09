@@ -399,14 +399,19 @@ main {
             width: 340px;
           }
           .content_six_incide {
-            width: 675px;
-            padding-left: 100px;
+            width: 650px;
+            padding-left: 60px;
             h2 {
               margin: 30px 0;
               color: #3498db;
             }
             hr {
               margin-bottom: 50px;
+              border-color: #ffffff;
+            }
+            p {
+              width: 650px;
+              font-weight: 300;
             }
           }
         }
@@ -472,6 +477,26 @@ main {
           width: 190px;
           p {
             text-align: center;
+          }
+        }
+      }
+    }
+    #content_six_block {
+      .content_six_wrapper {
+        width: 980px;
+        .content_six_slider {
+          width: 980px;
+          .content_six {
+            img {
+              width: 300px;
+              height: 300px;
+            }
+            .content_six_incide {
+              width: 500px;
+              p {
+                width: auto;
+              }
+            }
           }
         }
       }
@@ -583,6 +608,32 @@ main {
         .content_fifth_text {
           p {
             width: auto;
+          }
+        }
+      }
+    }
+    #content_six_block {
+      .content_six_wrapper {
+        width: 600px;
+        padding: 0;
+        .content_six_slider {
+          width: 600px;
+          .content_six {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .content_six_incide {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              padding: 0;
+              hr {
+                width: 500px;
+              }
+              p {
+                text-align: center;
+              }
+            }
           }
         }
       }
@@ -726,6 +777,25 @@ main {
         }
       }
     }
+    #content_six_block {
+      .content_six_wrapper {
+        width: 320px;
+        .content_six_slider {
+          width: 320px;
+          .content_six {
+            img {
+              width: 145px;
+              height: 145px;
+            }
+            .content_six_incide {
+              p {
+                width: 320px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 440px) {
@@ -814,6 +884,28 @@ main {
         .content_fifth_video {
           iframe {
             height: 220px;
+          }
+        }
+      }
+    }
+    #content_six_block {
+      .content_six_wrapper {
+        width: 290px;
+        .content_six_slider {
+          width: 290px;
+          .content_six {
+            width: 290px;
+            .content_six_incide {
+              h2 {
+                margin: 20px 0 0;
+              }
+              hr {
+                margin-bottom: 20px;
+              }
+              p {
+                width: 290px;
+              }
+            }
           }
         }
       }
