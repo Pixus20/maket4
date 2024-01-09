@@ -418,6 +418,15 @@ main {
       }
     }
   }
+  #content_seven_block {
+    .content_seven_wrapper {
+      width: 100%;
+      iframe {
+        width: 100%;
+        height: 400px;
+      }
+    }
+  }
 }
 @media screen and (max-width: 1250px) {
   header {
@@ -875,6 +884,22 @@ main {
         }
       }
     }
+    #content_six_block {
+      .content_six_wrapper {
+        .content_six_slider {
+          .content_six {
+            .content_six_incide {
+              h2 {
+                margin: 20px 0 0;
+              }
+              hr {
+                margin-bottom: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 350px) {
@@ -896,12 +921,6 @@ main {
           .content_six {
             width: 290px;
             .content_six_incide {
-              h2 {
-                margin: 20px 0 0;
-              }
-              hr {
-                margin-bottom: 20px;
-              }
               p {
                 width: 290px;
               }
