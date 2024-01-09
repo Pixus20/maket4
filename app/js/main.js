@@ -177,3 +177,12 @@ $(".content_fourth_slider").slick({
   fade: true,
   cssEase: "easy-in-out",
 });
+//slider six block
+$(".content_six_slider").slick({
+  dots: true,
+  arrows: false,
+  infinite: true,
+  speed: 500,
+  autoplay: true,
+  autoplaySpeed: 10000,
+});
