@@ -37,14 +37,7 @@ form.addEventListener("submit", function (event) {
   var isEmailValid = formTitle5.style.color === "black";
   var isCheckboxValid = formTitle6.style.color === "black";
 
-  if (
-    isNameValid &&
-    isSurnameValid &&
-    isSelectValid &&
-    isNumberValid &&
-    isEmailValid &&
-    isCheckboxValid
-  ) {
+  if (isNameValid && isSurnameValid && isSelectValid && isNumberValid && isEmailValid && isCheckboxValid) {
     nameInput.value = "";
     surnameInput.value = "";
     selectElement.value = "";
@@ -83,8 +76,7 @@ surnameInput.addEventListener("input", function (e) {
 // select input
 selectElement.addEventListener("change", function () {
   var selectedOption = selectElement.options[selectElement.selectedIndex].value;
-  formTitle3.style.color =
-    selectedOption === "developer" || selectedOption === "QA" ? "black" : "";
+  formTitle3.style.color = selectedOption === "developer" || selectedOption === "QA" ? "black" : "";
 });
 //number
 numberInput.addEventListener("input", function (e) {
@@ -123,8 +115,7 @@ emailInput.addEventListener("input", function (e) {
   }
   sanitizedValue = sanitizedValue.slice(0, 50);
 
-  var emailRegex =
-    /^[a-zA-Z0-9][a-zA-Z0-9._%+-]*@[a-zA-Z0-9]+([.-]*[a-zA-Z0-9]+)*\.[a-zA-Z]{2,}$/;
+  var emailRegex = /^[a-zA-Z0-9][a-zA-Z0-9._%+-]*@[a-zA-Z0-9]+([.-]*[a-zA-Z0-9]+)*\.[a-zA-Z]{2,}$/;
   if (emailRegex.test(sanitizedValue)) {
     e.target.value = sanitizedValue;
     formTitle5.style.color = "black";
@@ -146,16 +137,17 @@ $(".content_development").slick({
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 850,
+      breakpoint: 851,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
+        arrows: false,
         infinite: true,
         dots: true,
       },
     },
     {
-      breakpoint: 600,
+      breakpoint: 601,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -185,4 +177,20 @@ $(".content_six_slider").slick({
   speed: 500,
   autoplay: true,
   autoplaySpeed: 10000,
+});
+//menu scroll with height header
+document.addEventListener("DOMContentLoaded", function () {
+  const menuLinks = document.querySelectorAll("header a");
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      const targetId = this.getAttribute("href").substring(1);
+      const targetSection = document.getElementById(targetId);
+      const headerHeight = document.querySelector("header").offsetHeight;
+      window.scrollTo({
+        top: targetSection.offsetTop - headerHeight,
+        behavior: "smooth",
+      });
+    });
+  });
 });
