@@ -53,8 +53,8 @@ form.addEventListener("submit", function (event) {
     formTitle6.style.color = "";
     alert("Форма надіслана успішно!");
   } else {
-      alert("Будь ласка, заповніть усі поля правильно!");      
-    }
+    alert("Будь ласка, заповніть усі поля правильно!");
+  }
 });
 
 // name input
@@ -84,10 +84,10 @@ numberInput.addEventListener("input", function (e) {
   sanitizedValue = sanitizedValue.slice(0, 13);
   e.target.value = sanitizedValue;
   if (sanitizedValue.length === 13) {
-    formTitle4.style.color = "black";    
+    formTitle4.style.color = "black";
   } else {
     formTitle4.style.color = "red";
-  }  
+  }
 });
 
 numberInput.addEventListener("focus", function (e) {
@@ -100,8 +100,8 @@ numberInput.addEventListener("focus", function (e) {
 numberInput.addEventListener("blur", function (e) {
   var inputValue = e.target.value;
   if (inputValue.length !== 13) {
-    formTitle4.style.color = "red";    
-  }  
+    formTitle4.style.color = "red";
+  }
   if (inputValue.length < 13) {
     alert("Введіть вірний номер!");
     numberInput.value = "";
@@ -162,26 +162,17 @@ $(".content_development").slick({
     },
   ],
 });
-//slider fourth block
-$(".content_fourth_slider").slick({
+//slider
+$(".content_fourth_slider, .content_six_slider ").slick({
   dots: true,
   arrows: false,
   infinite: true,
-  speed: 500,
   autoplay: true,
   autoplaySpeed: 10000,
   fade: true,
-  cssEase: "easy-in-out",
+  cssEase: "ease-in-out",
 });
-//slider six block
-$(".content_six_slider").slick({
-  dots: true,
-  arrows: false,
-  infinite: true,
-  speed: 500,
-  autoplay: true,
-  autoplaySpeed: 10000,
-});
+
 //menu scroll with height header
 document.addEventListener("DOMContentLoaded", function () {
   const menuLinks = document.querySelectorAll("header a");
