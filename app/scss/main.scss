@@ -44,7 +44,7 @@ $second_bl: #666666;
 @mixin block-font {
   font-weight: 400;
 }
-
+//code
 * {
   margin: 0;
   padding: 0;
@@ -63,6 +63,7 @@ html {
     flex-grow: 1;
   }
 }
+//header
 header {
   @include flex-direction();
   position: sticky;
@@ -91,15 +92,15 @@ header {
         margin: 0 20px;
         color: $second_bl;
       }
-      .menu_list_last {
-        color: $primary;
-        background-color: $thirdly;
-        @include border-radius(30px);
-      }
       a:hover {
         @include border-radius(30px);
         color: $thirdly;
         background-color: $hover;
+      }
+      .menu_list_last {
+        color: $primary;
+        background-color: $thirdly;
+        @include border-radius(30px);
       }
       .menu_burger {
         display: none;
@@ -138,6 +139,7 @@ header {
     }
   }
 }
+//main
 main {
   #content_first_block {
     background-color: $fourth;
@@ -454,6 +456,7 @@ main {
     }
   }
 }
+//footer
 footer {
   .content_footer {
     @include flex-direction();
@@ -468,6 +471,7 @@ footer {
     }
   }
 }
+//adaptive
 @media screen and (max-width: 1250px) {
   header {
     .header_content {
@@ -548,6 +552,7 @@ footer {
     }
   }
 }
+//adaptive laptop
 @media screen and (max-width: 1024px) {
   .open {
     display: flex !important;
@@ -622,7 +627,6 @@ footer {
         }
       }
     }
-
     #content_six_block {
       .content_six_wrapper {
         padding: 0;
@@ -651,12 +655,27 @@ footer {
     }
   }
 }
+//adaptive slider
 @media screen and (max-width: 850px) {
   main {
     #content_second_block {
       .content_second_block_in {
         .content_development {
           width: 550px;
+          .slick-dots {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            bottom: 10px;
+          }
+          .slick-dots li {
+            display: inline-block;
+            margin: 0 5px;
+          }
+          .slick-dots li button::before {
+            padding: 30px 100px 0 0;
+            font-size: 16px;
+          }
         }
       }
     }
@@ -667,6 +686,7 @@ footer {
     }
   }
 }
+//adaptive tablet
 @media screen and (max-width: 768px) {
   main {
     #content_first_block {
@@ -731,6 +751,7 @@ footer {
     }
   }
 }
+//adaptive slider
 @media screen and (max-width: 600px) {
   main {
     #content_second_block {
@@ -740,20 +761,6 @@ footer {
         }
         .content_development {
           width: 300px;
-          .slick-dots {
-            position: absolute;
-            width: 100%;
-            text-align: center;
-            bottom: 10px;
-          }
-          .slick-dots li {
-            display: inline-block;
-            margin: 0 5px;
-          }
-          .slick-dots li button::before {
-            padding: 30px 100px 0 0;
-            font-size: 16px;
-          }
         }
       }
     }
@@ -778,6 +785,7 @@ footer {
     }
   }
 }
+//adaptive mobile
 @media screen and (max-width: 440px) {
   main {
     #content_first_block {
@@ -860,6 +868,7 @@ footer {
     }
   }
 }
+//adaptive mobile
 @media screen and (max-width: 350px) {
   header {
     .header_content {
@@ -890,6 +899,7 @@ footer {
     }
   }
 }
+//adaptive mobile S
 @media screen and (max-width: 320px) {
   main {
     #content_fourth_block {

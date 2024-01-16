@@ -162,7 +162,7 @@ $(".content_development").slick({
     },
   ],
 });
-//slider
+//slider 4,6 block
 $(".content_fourth_slider, .content_six_slider ").slick({
   dots: true,
   arrows: false,
