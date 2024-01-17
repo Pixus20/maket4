@@ -9,7 +9,7 @@ $hover: #eeeeee;
 $fourth: #f7f7f7;
 $fifth: #3498db;
 $border: #bababa;
-$second_bl: #666666;
+$second_bl: #858585;
 @mixin flex-direction() {
   display: flex;
   flex-direction: column;
@@ -59,9 +59,6 @@ html {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  main {
-    flex-grow: 1;
-  }
 }
 //header
 header {
@@ -93,7 +90,7 @@ header {
         color: $second_bl;
       }
       a:hover {
-        @include border-radius(30px);
+        @include border-radius(0px);
         color: $thirdly;
         background-color: $hover;
       }
@@ -141,6 +138,7 @@ header {
 }
 //main
 main {
+  flex-grow: 1;
   #content_first_block {
     background-color: $fourth;
     @include justify-contetn();
@@ -321,18 +319,14 @@ main {
           @include flex-direction();
           color: $second_bl;
           blockquote {
-            quotes: "\201C""\201D";
+            quotes: none;
             text-align: center;
             margin-bottom: 20px;
-          }
-          blockquote::before {
-            content: open-quote;
-            font-size: 30px;
-          }
-          blockquote::after {
-            content: close-quote;
-            font-size: 30px;
-          }
+            i{
+              font-size: 36px;
+              color:$border 
+            }
+          }          
           cite {
             color: $secondary;
           }
@@ -517,15 +511,12 @@ footer {
           }
         }
       }
-    }
+    }   
     #content_fifth_block {
-      .content_fifth_wrapper {
-        width: 95%;
-        .content_fifth_video {
-          width: 95%;
-        }
+      .content_fifth_wrapper {      
+          width: 97%;       
       }
-    }
+    } 
     #content_six_block {
       .content_six_wrapper {
         width: 95%;
@@ -596,7 +587,6 @@ footer {
             @include flex-direction();
             height: 250px;
             row-gap: 20px;
-            margin: 10px 0 0 15px;
             color: $thirdly;
           }
         }
@@ -624,6 +614,13 @@ footer {
       .content_fourth_wrapper {
         .content_fourth_slider {
           width: 738px;
+        }
+      }
+    }
+    #content_fifth_block {
+      .content_fifth_wrapper {
+        .content_fifth_video {
+          width: 100%;
         }
       }
     }
@@ -698,7 +695,6 @@ footer {
         }
         p {
           width: auto;
-          font-size: 14px;
         }
       }
       .content1_right {
@@ -793,9 +789,6 @@ footer {
         h1 {
           font-size: 18px;
         }
-        p {
-          font-size: 12px;
-        }
       }
       .content1_right {
         form {
@@ -868,7 +861,6 @@ footer {
     }
   }
 }
-//adaptive mobile
 @media screen and (max-width: 350px) {
   header {
     .header_content {
@@ -906,6 +898,13 @@ footer {
       .content_fourth_wrapper {
         .content_fourth_slider {
           width: 285px;
+          .content_fourth{
+            blockquote{
+              i{
+                font-size: 22px;
+              }
+            }
+          }
         }
       }
     }
