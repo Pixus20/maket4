@@ -1,0 +1,14 @@
+footer {
+  .content_footer {
+    @include flex-direction();
+    margin: 50px 0;
+    q {
+      quotes: none;
+      color: $fifth;
+    }
+    a {
+      text-decoration: none;
+      color: $second_bl;
+    }
+  }
+}

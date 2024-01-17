@@ -106,6 +106,7 @@ $(".content_fourth_slider, .content_six_slider ").slick({
   autoplay: true,
   autoplaySpeed: 10000,
   fade: true,
+  speed:1500,
   cssEase: "ease-in-out",
 });
 //menu scroll with height header

@@ -1,0 +1,109 @@
+//adaptive laptop
+@media screen and (max-width: 1024px) {
+  .open {
+    display: flex !important;
+  }
+  header {
+    .header_content {
+      .main_menu {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        width: 320px;
+        .menu_burger {
+          display: flex;
+          align-self: flex-start;
+          cursor: pointer;
+          margin-top: 35px;
+        }
+        .menu_nav {
+          display: none;
+          flex-direction: column;
+          align-items: center;
+          position: absolute;
+          left: 0;
+          top: 100px;
+          height: 300px;
+          width: 100%;
+          z-index: 50;
+          overflow-y: auto;
+          background-color: $primary;
+          animation: burger 1s ease-in-out;
+          transition: all 1s;
+          @keyframes burger {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+          .menu_list {
+            @include flex-direction();
+            height: 250px;
+            row-gap: 20px;
+            color: $thirdly;
+          }
+        }
+      }
+    }
+  }
+  main {
+    #content_second_block {
+      .content_second_block_in {
+        .content_development {
+          width: 800px;
+          .dev {
+            margin: 20px 10px;
+            h2 {
+              font-size: 16px;
+            }
+            hr {
+              width: 248px;
+            }
+          }
+        }
+      }
+    }
+    #content_fourth_block {
+      .content_fourth_wrapper {
+        .content_fourth_slider {
+          width: 738px;
+        }
+      }
+    }
+    #content_fifth_block {
+      .content_fifth_wrapper {
+        .content_fifth_video {
+          width: 100%;
+        }
+      }
+    }
+    #content_six_block {
+      .content_six_wrapper {
+        padding: 0;
+        .content_six_slider {
+          .content_six {
+            @include flex-direction();
+            .content_six_incide {
+              @include flex-direction();
+              padding: 0;
+              hr {
+                width: 95%;
+              }
+              p {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+    #content_eight_block {
+      .content_eight_wrapper {
+        width: 400px;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

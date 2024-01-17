@@ -1,0 +1,80 @@
+//adaptive mobile
+@media screen and (max-width: 440px) {
+  main {
+    #content_first_block {
+      .content1_left {
+        h1 {
+          font-size: 18px;
+        }
+      }
+      .content1_right {
+        form {
+          align-items: center;
+          h2 {
+            font-size: 16px;
+          }
+          p {
+            width: 290px;
+            text-align: left;
+          }
+          select {
+            width: 290px;
+            height: 44px;
+          }
+          input {
+            width: 275px;
+            height: 44px;
+          }
+          .form_checkbox {
+            width: 290px;
+          }
+          button {
+            width: 280px;
+            height: 44px;
+          }
+        }
+      }
+    }
+    #content_fourth_block {
+      .content_fourth_wrapper {
+        h1 {
+          width: 250px;
+          text-align: center;
+        }
+      }
+    }
+    #content_six_block {
+      .content_six_wrapper {
+        .content_six_slider {
+          .content_six {
+            .content_six_incide {
+              h2 {
+                margin: 20px 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    #content_eight_block {
+      .content_eight_wrapper {
+        width: 300px;
+        padding: 50px 0;
+        .content_eight {
+          i {
+            font-size: 36px;
+          }
+          h1 {
+            font-size: 16px;
+          }
+          p {
+            font-size: 12px;
+          }
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
