@@ -1,0 +1,31 @@
+//adaptive slider
+@media screen and (max-width: 850px) {
+  main {
+    #content_second_block {
+      .content_second_block_in {
+        .content_development {
+          width: 550px;
+          .slick-dots {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            bottom: 10px;
+          }
+          .slick-dots li {
+            display: inline-block;
+            margin: 0 5px;
+          }
+          .slick-dots li button::before {
+            padding: 30px 100px 0 0;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    #content_third_block {
+      .statistick_block {
+        padding: 0;
+      }
+    }
+  }
+}

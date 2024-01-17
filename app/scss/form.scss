@@ -1,0 +1,94 @@
+main {
+  #content_first_block {
+    background-color: $fourth;
+    @include justify-contetn();
+    padding: 40px 15px;
+    .content1_left {
+      @include flex-direction();
+      width: 550px;
+      h1 {
+        @include block-font();
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        width: 500px;
+        padding-top: 30px;
+        font-weight: 100;
+      }
+    }
+    .content1_right {
+      @include flex-direction();
+      margin-left: 57px;
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        h2 {
+          @include block-font();
+        }
+        p {
+          margin-top: 10px;
+          #form_title1 {
+            @include form();
+          }
+          q {
+            @include form();
+          }
+        }
+        input {
+          padding-left: 15px;
+          height: 45px;
+          width: 587px;
+          border-radius: 5px;
+          border: 1px solid $border;
+        }
+        input:focus {
+          @include form_focus();
+        }
+        select {
+          padding-left: 15px;
+          height: 45px;
+          width: 604px;
+          border-radius: 5px;
+          background-color: $primary;
+          border: 1px solid $border;
+        }
+        select:focus {
+          @include form_focus();
+        }
+        #Checkbox {
+          height: 15px;
+          width: 15px;
+        }
+        .form_checkbox {
+          margin-top: 10px;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          input {
+            margin-right: 15px;
+          }
+          p {
+            margin-top: 0;
+          }
+          a {
+            text-decoration: none;
+            color: $thirdly;
+          }
+        }
+        button {
+          align-self: center;
+          margin-top: 20px;
+          color: $primary;
+          background-color: $thirdly;
+          @include border-radius(30px);
+          height: 50px;
+          width: 368px;
+          font-weight: 500;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

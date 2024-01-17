@@ -1,0 +1,34 @@
+@mixin flex-direction() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin justify-contetn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border: none;
+  transition: all 0.4s;
+  padding: 10px 15px;
+}
+@mixin form {
+  quotes: none;
+  color: red;
+  cursor: pointer;
+}
+@mixin form_focus {
+  border: 1px solid #337ab7;
+  box-shadow: inset 0 0 5px #337ab7;
+}
+@mixin container-width {
+  width: 1190px;
+  padding: 50px 15px;
+}
+@mixin block-font {
+  font-weight: 400;
+}

@@ -1,0 +1,64 @@
+//adaptive tablet
+@media screen and (max-width: 768px) {
+  main {
+    #content_first_block {
+      .content1_left {
+        width: 95%;
+        margin-bottom: 20px;
+        h1 {
+          font-size: 22px;
+        }
+        p {
+          width: auto;
+        }
+      }
+      .content1_right {
+        form {
+          @include flex-direction();
+          h2 {
+            font-size: 22px;
+          }
+          p {
+            text-align: center;
+            font-size: 14px;
+          }
+          select {
+            width: 417px;
+            height: 45px;
+          }
+          input {
+            width: 400px;
+          }
+        }
+      }
+    }
+    #content_third_block {
+      .statistick_block {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 320px;
+        margin: 30px 0;
+        .statistick_content {
+          width: 140px;
+          margin: 0;
+          h1 {
+            font-size: 18px;
+            margin: 0;
+          }
+          p {
+            font-size: 12px;
+            line-height: 14px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    #content_fourth_block {
+      .content_fourth_wrapper {
+        .content_fourth_slider {
+          width: 580px;
+        }
+      }
+    }
+  }
+}
