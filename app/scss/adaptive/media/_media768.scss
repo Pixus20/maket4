@@ -1,5 +1,5 @@
 //adaptive tablet
-@media screen and (max-width: 768px) {
+@media (max-width: $breakpoint-tablet) {
   main {
     #content_first_block {
       .content1_left {

@@ -1,5 +1,5 @@
 //adaptive slider
-@media screen and (max-width: 600px) {
+@media (max-width: $breakpoint-slider2) {
   main {
     #content_second_block {
       .content_second_block_in {

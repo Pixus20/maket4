@@ -1,4 +1,4 @@
-@media screen and (max-width: 1250px) {
+@media  (max-width: $breakpoint-max) {
   header {
     .header_content {
       width: 95%;
