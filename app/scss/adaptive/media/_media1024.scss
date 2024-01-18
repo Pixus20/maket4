@@ -1,5 +1,5 @@
 //adaptive laptop
-@media screen and (max-width: 1024px) {
+@media (max-width: $breakpoint-desktop) {
   .open {
     display: flex !important;
   }

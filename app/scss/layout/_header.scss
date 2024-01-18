@@ -20,10 +20,11 @@ header {
   top: 0;
   height: 100px;
   z-index: 10;
-  background-color: $primary;
+  background-color: $primary; 
+  box-shadow: 0 5px 5px 3px $hover; 
   .header_content {
     @include justify-contetn();
-    width: 1220px;
+    width: 1190px;
     padding: 0 15px;
     .main_menu {
       @include justify-contetn();

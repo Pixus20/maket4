@@ -1,4 +1,4 @@
-@media screen and (max-width: 350px) {
+@media (max-width: $breakpoint-phoneM-S) {
   header {
     .header_content {
       .main_menu {
