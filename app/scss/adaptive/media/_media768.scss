@@ -60,5 +60,11 @@
         }
       }
     }
+    #content_eight_block {
+      .content_eight_wrapper {
+        width: 400px;
+        flex-wrap: wrap;
+      }
+    }
   }
 }
